@@ -10,7 +10,7 @@ PROFILE = {
     "qualification": "Harsh Kumar is pursuing B.Tech from LNCT&S, Bhopal in Computer Science Engineering, Cyber Security branch. He is currently in 4th semester / 2nd year.",
     "skills": "Skills: C++, JavaScript, HTML, CSS, Python, SQL, MySQL, Docker, Kubernetes, Burp Suite, Blender 3D, GitHub, and GitLab.",
     "learning": "Currently learning DSA, bug bounty, TryHackMe, and What The Hack.",
-    "contact": "Email: harrshdev52@gmail.com | Phone: +91 9456321455 | GitHub: github.com/harshsingh | LinkedIn: linkedin.com/in/harshsingh",
+    "contact": "Email: harrshdev52@gmail.com | Phone: +91 9525461621 | GitHub: www.github.com/harsh5ingh | LinkedIn: www.linkedin.com/in/harsh5ingh",
     "projects": "Current project focus: bug bounty notes, TryHackMe labs, and Python security scripts.",
 }
 
