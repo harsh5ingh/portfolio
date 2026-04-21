@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Harsh Singh – Frontend Developer from India. HTML, CSS, JavaScript, React, Python and more." />
+  <meta property="og:title" content="Harsh Singh | Portfolio" />
+  <meta property="og:description" content="Passionate Frontend Developer from India." />
+  <meta property="og:type" content="website" />
+  <title>Harsh Singh | Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Icons (Font Awesome) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plh7eqSndLkO2TJK+KSBCYLfun3/g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="nav-logo">harsh<span>.dev</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <p class="hero-greeting">
+          <span class="wave">👋</span> Hello, World!
+        </p>
+        <h1 class="hero-name">
+          I'm <span class="highlight">Harsh</span><br/>Singh
+        </h1>
+        <p class="hero-tagline">
+          A passionate <strong><span id="typing-text">Frontend Developer</span><span class="cursor">|</span></strong>
+        </p>
+        <p class="hero-desc">
+          Frontend Developer from India, crafting beautiful and performant web
+          experiences with HTML, CSS, JavaScript, and React. Always learning,
+          always building.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-code"></i> View My Work
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fas fa-paper-plane"></i> Get In Touch
+          </a>
+        </div>
+        <div class="hero-social">
+          <a href="https://github.com/harsh5ingh" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/harsh5ingh" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://instagram.com/harsh.5ingh" target="_blank" rel="noopener" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="mailto:harrsh0502@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-avatar-wrap">
+          <div class="hero-avatar-ring"></div>
+          <div class="hero-avatar-inner">🧑‍💻</div>
+
+          <div class="hero-float-badge badge-1">
+            <span class="badge-dot"></span> Available for work
+          </div>
+          <div class="hero-float-badge badge-2">
+            ⚡ Frontend Dev
+          </div>
+          <div class="hero-float-badge badge-3">
+            🇮🇳 India
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="container about-inner">
+      <div class="about-text reveal">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Passionate about <span>crafting</span> great web experiences</h2>
+        <p>
+          Hi! I'm Harsh, a Frontend Developer based in India. I love turning ideas
+          into reality through clean code and intuitive design. My journey in
+          programming started with C and C++, and I've since expanded into the web
+          world with HTML, CSS, JavaScript, and React.
+        </p>
+        <p>
+          When I'm not coding, I enjoy exploring new technologies, working on
+          open-source projects, and constantly improving my craft. I'm currently
+          deepening my JavaScript skills and building exciting projects.
+        </p>
+        <div class="about-highlights">
+          <div class="highlight-item">
+            <i class="fas fa-map-marker-alt"></i> India
+          </div>
+          <div class="highlight-item">
+            <i class="fas fa-graduation-cap"></i> Self-taught Developer
+          </div>
+          <div class="highlight-item">
+            <i class="fas fa-code"></i> Frontend Focused
+          </div>
+          <div class="highlight-item">
+            <i class="fas fa-heart"></i> Open Source
+          </div>
+          <div class="highlight-item">
+            <i class="fas fa-language"></i> English &amp; Hindi
+          </div>
+          <div class="highlight-item">
+            <i class="fas fa-coffee"></i> Coffee-driven
+          </div>
+        </div>
+      </div>
+
+      <div class="about-stats reveal reveal-delay-2">
+        <div class="stat-card">
+          <div class="stat-number" data-target="15" data-suffix="+">0+</div>
+          <div class="stat-label">Projects Built</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="10" data-suffix="+">0+</div>
+          <div class="stat-label">Technologies</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="2" data-suffix="+">0+</div>
+          <div class="stat-label">Years Coding</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="100" data-suffix="%">0%</div>
+          <div class="stat-label">Commitment</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <div class="container">
+      <div class="skills-header reveal">
+        <span class="section-tag">My Skills</span>
+        <h2 class="section-title">Technologies I <span>Work With</span></h2>
+        <p class="section-subtitle">A curated set of tools and technologies I use to build modern web applications.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-icon">🌐</div>
+          <div class="skill-name">HTML5</div>
+          <div class="skill-level">Advanced</div>
+          <div class="skill-bar"><div class="skill-fill" style="--fill: 0.92"></div></div>
+        </div>
+        <div class="skill-card reveal reveal-delay-1">
+          <div class="skill-icon">🎨</div>
+          <div class="skill-name">CSS3</div>
+          <div class="skill-level">Advanced</div>
+          <div class="skill-bar"><div class="skill-fill" style="--fill: 0.88"></div></div>
+        </div>
+        <div class="skill-card reveal reveal-delay-2">
+          <div class="skill-icon">⚡</div>
+          <div class="skill-name">JavaScript</div>
+          <div class="skill-level">Intermediate</div>
+          <div class="skill-bar"><div class="skill-fill" style="--fill: 0.75"></div></div>
+        </div>
+        <div class="skill-card reveal reveal-delay-3">
+          <div class="skill-icon">⚛️</div>
+          <div class="skill-name">React</div>
+          <div class="skill-level">Intermediate</div>
+          <div class="skill-bar"><div class="skill-fill" style="--fill: 0.65"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🐍</div>
+          <div class="skill-name">Python</div>
+          <div class="skill-level">Intermediate</div>
+          <div class="skill-bar"><div class="skill-fill" style="--fill: 0.70"></div></div>
+        </div>
+        <div class="skill-card reveal reveal-delay-1">
+          <div class="skill-icon">⚙️</div>
+          <div class="skill-name">C / C++</div>
+          <div class="skill-level">Intermediate</div>
+          <div class="skill-bar"><div class="skill-fill" style="--fill: 0.68"></div></div>
+        </div>
+        <div class="skill-card reveal reveal-delay-2">
+          <div class="skill-icon">🌿</div>
+          <div class="skill-name">Git</div>
+          <div class="skill-level">Intermediate</div>
+          <div class="skill-bar"><div class="skill-fill" style="--fill: 0.72"></div></div>
+        </div>
+        <div class="skill-card reveal reveal-delay-3">
+          <div class="skill-icon">🐬</div>
+          <div class="skill-name">MySQL</div>
+          <div class="skill-level">Beginner</div>
+          <div class="skill-bar"><div class="skill-fill" style="--fill: 0.50"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🍃</div>
+          <div class="skill-name">MongoDB</div>
+          <div class="skill-level">Beginner</div>
+          <div class="skill-bar"><div class="skill-fill" style="--fill: 0.45"></div></div>
+        </div>
+        <div class="skill-card reveal reveal-delay-1">
+          <div class="skill-icon">🎭</div>
+          <div class="skill-name">Figma</div>
+          <div class="skill-level">Intermediate</div>
+          <div class="skill-bar"><div class="skill-fill" style="--fill: 0.60"></div></div>
+        </div>
+        <div class="skill-card reveal reveal-delay-2">
+          <div class="skill-icon">💨</div>
+          <div class="skill-name">Tailwind CSS</div>
+          <div class="skill-level">Intermediate</div>
+          <div class="skill-bar"><div class="skill-fill" style="--fill: 0.65"></div></div>
+        </div>
+        <div class="skill-card reveal reveal-delay-3">
+          <div class="skill-icon">🟢</div>
+          <div class="skill-name">Node.js</div>
+          <div class="skill-level">Beginner</div>
+          <div class="skill-bar"><div class="skill-fill" style="--fill: 0.40"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <div class="container">
+      <div class="projects-header reveal">
+        <span class="section-tag">Projects</span>
+        <h2 class="section-title">Things I've <span>Built</span></h2>
+        <p class="section-subtitle">A selection of personal and learning projects I've worked on.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <article class="project-card reveal">
+          <div class="project-header">
+            <div class="project-icon">🖥️</div>
+            <div class="project-links">
+              <a href="https://github.com/harsh5ingh/UseMon" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">UseMon</h3>
+          <p class="project-desc">A lightweight Windows screen time tracker that monitors app usage and helps improve productivity by giving insights into how you spend time on your PC.</p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Python</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal reveal-delay-1">
+          <div class="project-header">
+            <div class="project-icon">🔢</div>
+            <div class="project-links">
+              <a href="https://github.com/harsh5ingh/counter-app" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Counter App</h3>
+          <p class="project-desc">An amazing interactive counter app built with HTML, CSS, and JavaScript. Features increment, decrement, and reset functionality with a clean, responsive UI.</p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal reveal-delay-2">
+          <div class="project-header">
+            <div class="project-icon">🎮</div>
+            <div class="project-links">
+              <a href="https://github.com/harsh5ingh/BreakOut" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">BreakOut Game</h3>
+          <p class="project-desc">A classic Breakout/Arkanoid-style browser game built with vanilla JavaScript and HTML5 Canvas. Control the paddle to bounce the ball and break all the bricks.</p>
+          <div class="project-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML5 Canvas</span>
+            <span class="tag">CSS</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-header">
+            <div class="project-icon">🕐</div>
+            <div class="project-links">
+              <a href="https://github.com/harsh5ingh/Clock-Projekt-Js" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Clock Project</h3>
+          <p class="project-desc">A stylish analogue and digital clock built with JavaScript. Features smooth second-hand animations and real-time updates using the Date API.</p>
+          <div class="project-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal reveal-delay-1">
+          <div class="project-header">
+            <div class="project-icon">🦸</div>
+            <div class="project-links">
+              <a href="https://github.com/harsh5ingh/marvel1" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Marvel Fan Page</h3>
+          <p class="project-desc">A visually rich Marvel-themed fan page built with HTML and CSS, showcasing advanced CSS techniques, animations, and responsive layout skills.</p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal reveal-delay-2">
+          <div class="project-header">
+            <div class="project-icon">💳</div>
+            <div class="project-links">
+              <a href="https://github.com/harsh5ingh/business-card" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Business Card</h3>
+          <p class="project-desc">A clean, minimalist digital business card built with CSS. Demonstrates card flip animations, hover effects, and modern CSS properties.</p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+          </div>
+        </article>
+
+      </div>
+
+      <div style="text-align:center; margin-top: 2.5rem;" class="reveal">
+        <a href="https://github.com/harsh5ingh?tab=repositories" target="_blank" rel="noopener" class="btn btn-outline">
+          <i class="fab fa-github"></i> View All on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="container contact-inner">
+      <div class="contact-text reveal">
+        <span class="section-tag">Contact</span>
+        <h2 class="section-title">Let's <span>Connect</span></h2>
+        <p>
+          Whether you have a project idea, a collaboration opportunity, or just
+          want to say hi – my inbox is always open. I'll try my best to get back
+          to you!
+        </p>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-item-info">
+              <small>Email</small>
+              <a href="mailto:harrsh0502@gmail.com">harrsh0502@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fab fa-linkedin-in"></i></div>
+            <div class="contact-item-info">
+              <small>LinkedIn</small>
+              <a href="https://linkedin.com/in/harsh5ingh" target="_blank" rel="noopener">linkedin.com/in/harsh5ingh</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fab fa-instagram"></i></div>
+            <div class="contact-item-info">
+              <small>Instagram</small>
+              <a href="https://instagram.com/harsh.5ingh" target="_blank" rel="noopener">@harsh.5ingh</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fab fa-github"></i></div>
+            <div class="contact-item-info">
+              <small>GitHub</small>
+              <a href="https://github.com/harsh5ingh" target="_blank" rel="noopener">github.com/harsh5ingh</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-social">
+          <a href="https://github.com/harsh5ingh" target="_blank" rel="noopener" class="social-btn">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://linkedin.com/in/harsh5ingh" target="_blank" rel="noopener" class="social-btn">
+            <i class="fab fa-linkedin-in"></i> LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form reveal reveal-delay-2">
+        <form id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Project Idea / Collaboration" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <p class="form-status" id="form-status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container footer-inner">
+      <span class="footer-logo">harsh<span>.dev</span></span>
+      <p class="footer-copy">
+        &copy; <span id="year"></span> Harsh Singh. Built with ❤️ and lots of ☕
+      </p>
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
