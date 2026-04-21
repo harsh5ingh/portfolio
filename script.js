@@ -77,16 +77,20 @@ skillCards.forEach(card => skillObserver.observe(card));
 // ===== Animated counter =====
 function animateCounter(el) {
   const target = parseInt(el.dataset.target, 10);
+  if (isNaN(target)) return;
   const suffix = el.dataset.suffix || '';
   const duration = 1500;
-  const step = Math.ceil(target / (duration / 16));
-  let current = 0;
+  const startTime = performance.now();
 
-  const timer = setInterval(() => {
-    current = Math.min(current + step, target);
+  function step(currentTime) {
+    const elapsed = currentTime - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    const current = Math.round(progress * target);
     el.textContent = current + suffix;
-    if (current >= target) clearInterval(timer);
-  }, 16);
+    if (progress < 1) requestAnimationFrame(step);
+  }
+
+  requestAnimationFrame(step);
 }
 
 const counterEls = document.querySelectorAll('.stat-number[data-target]');
@@ -114,6 +118,7 @@ let charIdx = 0;
 let deleting = false;
 
 function type() {
+  if (!typingEl) return;
   const current = phrases[phraseIdx];
   if (deleting) {
     typingEl.textContent = current.substring(0, charIdx--);
